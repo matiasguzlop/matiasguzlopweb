@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeProvider } from "styled-components";
+import Presentation from './pages/Presentation';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import darkTheme from './themes/darkTheme';
+
+const Container = styled.div`
+  background-color: ${props => props.theme.backgroundColor.primary};
+  color: ${props => props.theme.color.primary};
+  min-height: 100vh;
+  font-weight: bold;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <Container>
+        <Presentation></Presentation>
+        <About></About>
+        <Experience></Experience>
+        <Contact></Contact>
+      </Container>
+    </ThemeProvider>
   );
 }
 
