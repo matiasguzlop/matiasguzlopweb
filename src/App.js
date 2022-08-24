@@ -1,9 +1,10 @@
 import styled, { ThemeProvider } from "styled-components";
+import Header from "./components/Header";
 import Presentation from './pages/Presentation';
 import About from './pages/About';
-import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import darkTheme from './themes/darkTheme';
+import darkTheme from './styles/darkTheme';
 
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundColor.primary};
@@ -16,9 +17,10 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Container>
+        <Header></Header>
         <Presentation></Presentation>
         <About></About>
-        <Experience></Experience>
+        <Projects></Projects>
         <Contact></Contact>
       </Container>
     </ThemeProvider>
