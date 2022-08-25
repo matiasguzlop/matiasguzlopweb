@@ -6,7 +6,7 @@ const projectsList = [{
     techs: "Built using MongoDB, Express, ReactJS and NodeJS.",
 }, {
     title: "TrainerScheduler",
-    url: "https://github.com/matiasguzlop/trainerscheduler",
+    // url: "https://github.com/matiasguzlop/trainerscheduler",
     company: "Personal project - Under development",
     body: " It is a tool for fitness trainers that helps them to organize their clients on a calendar scheduler, based on a month subscription with a specified amount of sessions every week.It allows to send automated reminders to the clients and generate reports at the end of the month.",
     techs: "Built using MongoDB, Express, ReactJS and NodeJS."
