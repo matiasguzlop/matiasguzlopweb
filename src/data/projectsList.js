@@ -39,7 +39,7 @@ const projectsList = [{
     title: "SCADA system",
     company: "Frigosorno S.A.",
     body: "Industrial data acquisition system that shows real time key process indicators on graphical slides, on TV screens running Chrome. Also includes an historical registers section for visualize data as charts and downloadable XLSX files.",
-    techs: "Used NodeJS, modbus TCP protocol, MySQL, JQuery and DyGraphs."   
+    techs: "Used NodeJS, PHP, modbus TCP protocol, MySQL, JQuery and DyGraphs."   
 }
 ];
 
