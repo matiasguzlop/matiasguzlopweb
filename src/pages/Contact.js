@@ -1,32 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
+import Centerer from '../components/Centerer';
+import { headerHeight } from '../styles/constants';
 
 const Container = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: ${headerHeight};
 `;
 
-const Centerer = styled.div`
-  margin: 0 auto;
-  max-width: 80%;
-  min-width: 50%;
-`;
 const Title = styled.h1`
   text-align: center;
 `;
+
 const BoxContainer = styled.div`
   margin-top: 5em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
+  display: block;
   font-weight: lighter;
+  a{
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+  }
   div{
     background-color: ${props => props.theme.backgroundColor.tertiary};
-    padding: 1em;
-    border-radius: 30px;
+    padding: 1em ;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    :hover{
+      background-color: ${props => props.theme.backgroundColor.secondary};
+      color: ${props => props.theme.color.secondary};
+    }
   }
   div>img{
     display: block;
@@ -37,37 +44,44 @@ const Icon = styled.img`
   width: 40px;
   filter: ${props => props.theme.name === "dark" ? 'invert()' : 'none'};
 `;
-function Contact() {
+
+const Filler = styled.div`
+  width: 100%;
+  height: 5em;
+`;
+
+function Contact({ refPassed }) {
   return (
-    <Container>
+    <Container ref={refPassed}>
       <Centerer>
         <Title>Contact</Title>
         <BoxContainer>
-          <div>
-            <Icon src='icons/linkedin.svg'></Icon>
-            <span>
+          <a href='https://linkedin.com/in/matiasguzlop' target="_blank" rel='noreferrer'>
+            <div>
+              <Icon src='icons/linkedin.svg'></Icon>
               linkedin.com/matiasguzlop
-            </span>
-          </div>
-          <div>
-            <Icon src="icons/github.svg"></Icon>
-            <span>
+            </div>
+          </a>
+          <a href='https://github.com/matiasguzlop' target="_blank" rel='noreferrer'>
+            <div>
+              <Icon src="icons/github.svg"></Icon>
               github.com/matiasguzlop
-            </span>
-          </div>
-          <div>
-            <Icon src="icons/email.svg"></Icon>
-            <span>
+            </div>
+          </a>
+          <a href='mailto:matiasguzlop@gmail.com'>
+            <div>
+              <Icon src="icons/email.svg"></Icon>
               matiasguzlop@gmail.com
-            </span>
-          </div>
-          <div>
-            <Icon src='icons/ig.svg'></Icon>
-            <span>
+            </div>
+          </a>
+          <a href='https://instagram.com/matiasguzlop' target="_blank" rel="noreferrer">
+            <div>
+              <Icon src='icons/ig.svg'></Icon>
               instagram.com/matiasguzlop
-            </span>
-          </div>
+            </div>
+          </a>
         </BoxContainer>
+        <Filler></Filler>
       </Centerer>
     </Container>
   );

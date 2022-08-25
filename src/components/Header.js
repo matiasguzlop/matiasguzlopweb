@@ -39,6 +39,7 @@ const MenuContent = styled.ul`
     transition: height 0.2s ease-out;
     height: 0px;
     padding: 0;
+    font-weight: lighter;
     &>li{
         padding: 1em;
         width: 100%;
@@ -74,7 +75,22 @@ const Title = styled.h2`
     font-weight: lighter;
     color: ${props => props.theme.color.tertiary};
 `;
-function Header() {
+
+const Veil = styled.div`
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: ${props => props.theme.backgroundColor.veil};
+    &.visible{
+        display: block;
+        z-index: -1;
+    }
+`;
+
+function Header({ handleScrollToSection }) {
     const [menuDeployed, setMenuDeployed] = useState(false);
 
     const handleClickMenuIcon = () => {
@@ -88,11 +104,32 @@ function Header() {
             </MenuIconContainer>
             <Title>MATIASGUZLOP.DEV</Title>
             <MenuContent className={menuDeployed && 'deployed'}>
-                <li>Matías Guzmán</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Contact</li>
+                <li
+                    onClick={() => {
+                        handleScrollToSection("matias");
+                        handleClickMenuIcon();
+                    }}
+                >Matías Guzmán</li>
+                <li
+                    onClick={() => {
+                        handleScrollToSection("about");
+                        handleClickMenuIcon();
+                    }}
+                >About</li>
+                <li
+                    onClick={() => {
+                        handleScrollToSection("projects");
+                        handleClickMenuIcon();
+                    }}
+                >Projects</li>
+                <li
+                    onClick={() => {
+                        handleScrollToSection("contact");
+                        handleClickMenuIcon();
+                    }}
+                >Contact</li>
             </MenuContent>
+            <Veil className={menuDeployed && 'visible'} onClick={handleClickMenuIcon}></Veil>
         </Container>
     );
 }

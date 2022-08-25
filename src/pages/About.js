@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import GoDownButton from '../components/GoDownButton';
+import Centerer from '../components/Centerer';
+import { headerHeight } from '../styles/constants';
 
 const Container = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: ${headerHeight};
 `;
-
-const Centerer = styled.div`
-  margin: 0 auto;
-  max-width: 90%;
-  min-width: 50%;`;
 
 const Title = styled.h1`
   text-align: center;
@@ -42,6 +40,7 @@ const TechsBox = styled.div`
   gap: 0.5em;
   color: ${props => props.theme.color.tertiary};
   &>li{
+    transition: background-color 0.2s ease-in-out;
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -55,23 +54,23 @@ const TechsBox = styled.div`
   }
 `;
 
-function About() {
+function About({ refPassed, handleScrollToSection }) {
   return (
-    <Container>
+    <Container ref={refPassed}>
       <Centerer>
         <Title>About me</Title>
         <List>
           <li>
-            <div>🎓</div>University graduated Civil Electronic Engineer from Universidad de La Frontera, Temuco, Chile.
+            <div>🎓</div>University graduated Civil Electronic Engineer from Universidad de La Frontera, Temuco, Chile 🇨🇱.
           </li>
           <li>
             <div>⚙️</div>I started building data monitoring systems for industrial companies from hardware to software, designing electronic circuit boards, programming microcontrollers, managing data servers and building UI.
           </li>
           <li>
-            <div>👨‍💻</div>From that experience, i have became more intrested in software development and found a great field in wich i have been delving: Constantly been learning new technologies and adopting good practices in my work.
+            <div>👨‍💻</div>From that experience, i have became more intrested in software development and found a great field in wich i have been delving.
           </li>
           <li>
-            <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work on.
+            <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work on. Constantly learning new technologies and adopting good practices in my work.
           </li>
           <li>
             <div>🎾</div>Sportsman, sociable and good interpersonal skills.
@@ -86,7 +85,10 @@ function About() {
           <li>Express</li>
           <li>MongoDB</li>
         </TechsBox>
-        <GoDownButton text="Checkout what i have built"></GoDownButton>
+        <GoDownButton
+          text="Checkout what i have built"
+          onClick={() => handleScrollToSection("projects")}
+        ></GoDownButton>
       </Centerer>
     </Container>
   );

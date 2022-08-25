@@ -10,6 +10,7 @@ const Button = styled.button`
     padding: 1em 2em;
     font-size: 1em;
     width: 100%;
+    cursor: pointer;
     &:hover{
         color: ${props => props.theme.color.secondary};
         background-color: ${props => props.theme.backgroundColor.secondary};

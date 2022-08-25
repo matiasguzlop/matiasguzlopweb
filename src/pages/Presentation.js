@@ -1,19 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import GoDownButton from '../components/GoDownButton';
+import Centerer from '../components/Centerer';
+import { headerHeight } from '../styles/constants';
 
 const Container = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-const Centerer = styled.div`
-  margin: 0 auto;
-  max-width: 80%;
-  min-width: 50%;
-`;
+  padding-top: ${headerHeight};
+  `;
 
 const TitleContainer = styled.div`
   display: grid;
@@ -39,6 +36,7 @@ const PreTitle = styled.h4`
   width: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
+  color: ${props => props.theme.color.tertiary};
   `;
 
 const Title = styled.h1`
@@ -46,7 +44,7 @@ const Title = styled.h1`
   grid-column: 2/3;
   grid-row: 1/2;
   margin: 0;
-  color: ${props => props.theme.color.tertiary};
+  color: ${props => props.theme.color.primary};
   `;
 
 const SubTitle = styled.h2`
@@ -58,9 +56,9 @@ const Drop = styled.p`
   color: ${props => props.theme.color.tertiary};
 `;
 
-function Presentation() {
+function Presentation({ refPassed, handleScrollToSection }) {
   return (
-    <Container>
+    <Container ref={refPassed}>
       <Centerer>
         <TitleContainer>
           <Img src='img/mati2.png'></Img>
@@ -71,13 +69,16 @@ function Presentation() {
         </TitleContainer>
         <SubTitle>I'm full stack developer</SubTitle>
         <Drop>
-          I have 4 years experience working as freelancer for industrial companies,
-          mainly building real time data aquisition systems and user interfaces.
+          I have 4 years of experience working as freelancer for industrial companies,
+          mainly building real time data acquisition systems and user interfaces.
         </Drop>
-        <GoDownButton text="More about me">
+        <GoDownButton
+          text="More about me"
+          onClick={() => handleScrollToSection("about")}
+        >
         </GoDownButton>
       </Centerer>
-    </Container>
+    </Container >
   );
 }
 
