@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.75mm"
+   height="31.75mm"
+   viewBox="0 0 31.75 31.75"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   sodipodi:docname="thumbnail.svg"
+   inkscape:export-filename="/home/mati/Desktop/mguzportfolio/public/icons/thumbnail_120.png"
+   inkscape:export-xdpi="100.058"
+   inkscape:export-ydpi="100.058"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5315474"
+     inkscape:cx="-40.686578"
+     inkscape:cy="129.96004"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-73.888138,-95.688606)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';stroke-width:0.264583"
+       x="73.229195"
+       y="101.29214"
+       id="text3092"><tspan
+         sodipodi:role="line"
+         id="tspan3090"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';stroke-width:0.264583"
+         x="73.229195"
+         y="101.29214" /></text>
+    <g
+       id="g59946"
+       transform="matrix(0.85974995,0,0,0.85974995,12.589288,15.646801)">
+      <path
+         sodipodi:type="star"
+         style="fill:none;fill-opacity:1;stroke:#75c2ff;stroke-width:0.310498;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path38312"
+         inkscape:flatsided="true"
+         sodipodi:sides="6"
+         sodipodi:cx="274.54221"
+         sodipodi:cy="359.87625"
+         sodipodi:r1="1.8601665"
+         sodipodi:r2="1.6109514"
+         sodipodi:arg1="0.52359878"
+         sodipodi:arg2="1.0471976"
+         inkscape:rounded="-3.46945e-18"
+         inkscape:randomized="0"
+         d="m 276.15316,360.80633 -1.61095,0.93009 -1.61096,-0.93009 0,-1.86016 1.61096,-0.93009 1.61095,0.93009 z"
+         transform="matrix(8.9882208,0,0,8.9882208,-2377.8828,-3123.0836)"
+         inkscape:transform-center-y="-4.4592949e-05"
+         inkscape:transform-center-x="-0.0001133061" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.991px;line-height:1.25;font-family:Heavitas;-inkscape-font-specification:Heavitas;text-align:center;text-anchor:middle;fill:#75c2ff;fill-opacity:1;stroke-width:0.899661"
+         x="90.326904"
+         y="120.33231"
+         id="text29300"><tspan
+           sodipodi:role="line"
+           id="tspan29298"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Heavitas;-inkscape-font-specification:Heavitas;text-align:center;text-anchor:middle;fill:#75c2ff;fill-opacity:1;stroke-width:0.899661"
+           x="90.326904"
+           y="120.33231">M</tspan></text>
+    </g>
+  </g>
+</svg>
