@@ -61,19 +61,19 @@ function About({ refPassed, handleScrollToSection }) {
         <Title>About me</Title>
         <List>
           <li>
-            <div>🎓</div>University graduated Civil Electronic Engineer from Universidad de La Frontera, Temuco, Chile 🇨🇱.
+            <div>🎓</div>University graduated Electronic Engineer from Universidad de La Frontera, Temuco, Chile 🇨🇱.
           </li>
           <li>
-            <div>⚙️</div>I started building data monitoring systems for industrial companies from hardware to software, designing electronic circuit boards, programming microcontrollers, managing data servers and building UI.
+            <div>⚙️</div>I started building data monitoring systems for industrial companies, working on hardware and software, designing electronic circuit boards, programming microcontrollers, managing data servers and building UI.
           </li>
           <li>
-            <div>👨‍💻</div>From that experience, i became more interested in software development and found a great field in wich i have been delving.
+            <div>👨‍💻</div>From that experience, i became more interested in software development and found a great field in which i have been delving.
           </li>
           <li>
             <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work on. Constantly learning new technologies and adopting good practices in my work.
           </li>
           <li>
-            <div>🎾</div>Sportsman, sociable and good with interpersonal relationships.
+            <div>🎾</div>Sportsman, sociable with good interpersonal skills.
           </li>
         </List>
         <h4>Technologies i've been working with recently:</h4>

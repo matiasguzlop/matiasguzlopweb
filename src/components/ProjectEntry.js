@@ -79,7 +79,7 @@ function ProjectEntry({ children, resumeLink }) {
                 <Body className='centered'>
                     <h2 className='block'>
                         <a
-                            href='https://drive.google.com/file/d/1Rp7_ht3VqSv8Pvu-AvcAfv30ND_QdMx6/view?usp=sharing'
+                            href='https://drive.google.com/drive/folders/1N52IdQpJ5nGJo97OrTe_oQygCoLkthgs?usp=sharing'
                             target="_blank"
                             rel="noreferrer"
                         >Checkout my PDF resume ⬇️</a>
