@@ -70,7 +70,7 @@ function Presentation({ refPassed, handleScrollToSection }) {
         <SubTitle>I'm full stack developer</SubTitle>
         <Drop>
           I have 4 years of experience working as freelancer for industrial companies,
-          mainly building real time data acquisition systems and user interfaces.
+          mainly building real time-data acquisition systems and user interfaces.
         </Drop>
         <GoDownButton
           text="More about me"

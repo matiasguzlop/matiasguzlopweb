@@ -67,16 +67,16 @@ function About({ refPassed, handleScrollToSection }) {
             <div>⚙️</div>I started building data monitoring systems for industrial companies from hardware to software, designing electronic circuit boards, programming microcontrollers, managing data servers and building UI.
           </li>
           <li>
-            <div>👨‍💻</div>From that experience, i have became more intrested in software development and found a great field in wich i have been delving.
+            <div>👨‍💻</div>From that experience, i became more interested in software development and found a great field in wich i have been delving.
           </li>
           <li>
             <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work on. Constantly learning new technologies and adopting good practices in my work.
           </li>
           <li>
-            <div>🎾</div>Sportsman, sociable and good interpersonal skills.
+            <div>🎾</div>Sportsman, sociable and good with interpersonal relationships.
           </li>
         </List>
-        <h4>Technologies i have been working with recently:</h4>
+        <h4>Technologies i've been working with recently:</h4>
         <TechsBox>
           <li>JavaScript ES6+</li>
           <li>React</li>
@@ -86,7 +86,7 @@ function About({ refPassed, handleScrollToSection }) {
           <li>MongoDB</li>
         </TechsBox>
         <GoDownButton
-          text="Checkout what i have built"
+          text="Checkout what i've built"
           onClick={() => handleScrollToSection("projects")}
         ></GoDownButton>
       </Centerer>

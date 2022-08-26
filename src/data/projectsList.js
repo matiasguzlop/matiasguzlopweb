@@ -8,7 +8,7 @@ const projectsList = [{
     title: "TrainerScheduler",
     // url: "https://github.com/matiasguzlop/trainerscheduler",
     company: "Personal project - Under development",
-    body: " It is a tool for fitness trainers that helps them to organize their clients on a calendar scheduler, based on a month subscription with a specified amount of sessions every week.It allows to send automated reminders to the clients and generate reports at the end of the month.",
+    body: " It is a tool for fitness trainers that helps them to organize their clients on a calendar scheduler, based on a month subscription with a specified amount of sessions every week. It allows to send automated reminders to the clients and generate reports at the end of the month.",
     techs: "Built using MongoDB, Express, ReactJS and NodeJS."
 }, {
     title: "Firmware Updater",
@@ -28,7 +28,7 @@ const projectsList = [{
 },{
     title: "Automatic Whatsapp tickets system",
     company: "Frigosorno S.A.",
-    body: "Maintenance notification tickets system that could post automated messages on a whatsapp group. RPA system running whatsapp web on a Linux server.",
+    body: "Maintenance notification tickets system that posts automated messages on a whatsapp group. RPA system running whatsapp web on a Linux server.",
     techs: "Backend built on NodeJS with Puppeteer module driving a headless Chrome instance, MySQL for data storage and JQuery on frontend."
 },{
     title: "Weights monitoring for grapes packing plant",
