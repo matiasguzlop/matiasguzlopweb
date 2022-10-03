@@ -70,7 +70,7 @@ function About({ refPassed, handleScrollToSection }) {
             <div>👨‍💻</div>From that experience, i became more interested in software development and found a great field in which i have been delving.
           </li>
           <li>
-            <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work on. Constantly learning new technologies and adopting good practices in my work.
+            <div>📈</div>I'm a lover of challenges and learning, always trying to do my best on the things i work. Always learning new technologies and adopting good practices in my work.
           </li>
           <li>
             <div>🎾</div>Sportsman, sociable with good interpersonal skills.

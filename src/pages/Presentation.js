@@ -69,7 +69,7 @@ function Presentation({ refPassed, handleScrollToSection }) {
         </TitleContainer>
         <SubTitle>I'm full stack developer</SubTitle>
         <Drop>
-          I have 4 years of experience working as freelancer for industrial companies,
+          I have worked as freelancer solving problems for industrial companies, with 
           mainly building real time-data acquisition systems and user interfaces.
         </Drop>
         <GoDownButton
